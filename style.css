@@ -62,6 +62,7 @@ main {
   display: grid;
   grid-auto-flow: row;
   row-gap: 40px;
+  height: fit-content;
 }
 
 .content-card {
@@ -80,11 +81,6 @@ h1 {
   margin: 24px auto 8px 24px;
 }
 
-p {
-  color: #929292;
-  font-weight: 400;
-}
-
 .content-pubishing-data {
   margin: 0 auto 14px 24px;
   font-size: 12px;
@@ -96,12 +92,29 @@ p {
 
 .content-text {
   margin: 0 24px 24px 24px;
+  color: #929292;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.content-read-more {
+  margin: 0 24px 46px 24px;
+  color: #929292;
+  font-weight: 400;
   font-size: 14px;
 }
 
 .content-button {
   display: flex;
   justify-content: flex-end;
+}
+
+.list-level-1 {
+  margin-left: 48px;
+}
+
+.list-level-2 {
+  margin-left: 56px;
 }
 
 .content-more {
@@ -135,7 +148,6 @@ aside {
   grid-auto-flow: row;
   align-content: flex-start;
   border-radius: 4px;
-  /* min-width: 250px; */
   height: fit-content;
 }
 
