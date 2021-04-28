@@ -32,6 +32,10 @@ header {
   margin: auto auto auto 140px;
 }
 
+.header-logo:hover {
+  cursor: pointer;
+}
+
 .header-menu {
   font-size: 14px;
   font-weight: 400;
@@ -40,6 +44,11 @@ header {
   grid-auto-flow: column;
   column-gap: 48px;
   margin: auto 169px auto auto;
+}
+
+.header-menu p:hover {
+  color:#FE0078;
+  cursor:pointer;
 }
 
 .content {
