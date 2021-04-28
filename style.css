@@ -118,7 +118,12 @@ p {
   text-align: center;
 }
 
-.content-more:hover {
+a {
+  text-decoration: none;
+  color: #545454;
+}
+
+.content-more:hover, .content-more:hover a{
   background-color: #FE0078;
   color: #FFFFFF;
   cursor: pointer;
