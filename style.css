@@ -116,10 +116,83 @@ p {
 }
 
 aside {
-  background: cornflowerblue;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
   display: grid;
-  align-content: center;
+  grid-auto-flow: row;
+  align-content: flex-start;
+  border-radius: 4px;
+  min-width: 250px;
+}
+
+input {
+  all:unset;
+  color: #545454;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #EEEEEE;
+  border-radius: 10px;
+  height: 52px;
+  margin: 20px 20px 25px 20px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+input:hover, input:focus {
+  border: 1px solid #FE0078;
+  cursor: pointer;
+}
+
+.table-categories {
+  margin: 0 20px 40px 20px;
+}
+
+th {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 13px;
+  border-left: 2px solid #FE0078;
+  height: 38px;
+}
+
+tr {
+  height: 15px;
+}
+
+td {
+  color: #545454;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.table-data td{
+  height: 35px;
+  border-bottom: 2px dotted #EEEEEE;
+}
+
+.table-data:hover td {
+  color: #FE0078;
+  border-bottom: 2px dotted #FE0078;
+  cursor: pointer;
+}
+
+tr:first-child {
+  padding-top: 34px;
+}
+
+tr>td:first-child {
+  text-align: left;
+  padding-left: 13px;
+}
+
+tr>td:last-child {
+  text-align: right;
+  padding-right: 18px;
+}
+
+.table-ads {
+  margin: 0 20px 40px 20px;
 }
 
 footer {
