@@ -54,7 +54,7 @@ header {
 .content {
   margin: 56px 10% 64px 10%;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 730px 380px;
   column-gap: 50px;
 }
 
@@ -130,7 +130,7 @@ aside {
   grid-auto-flow: row;
   align-content: flex-start;
   border-radius: 4px;
-  min-width: 250px;
+  /* min-width: 250px; */
   height: fit-content;
 }
 
@@ -202,6 +202,26 @@ tr>td:last-child {
 }
 
 .table-ads {
+  margin: 0 20px 41px 20px;
+}
+
+.ads-area {
+  background-color: #EEEEEE;
+  color: #545454;
+  font-size: 36px;
+  font-weight: 400;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.area-1, .area-2 {
+  margin: 0 20px 32px 20px;
+}
+
+.area-3 {
   margin: 0 20px 40px 20px;
 }
 
