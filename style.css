@@ -46,7 +46,7 @@ header {
   margin: auto 169px auto auto;
 }
 
-.header-menu p:hover {
+.header-menu p:hover, .header-menu p:hover a {
   color:#FE0078;
   cursor:pointer;
 }
@@ -263,6 +263,53 @@ tr>td:last-child {
   font-size: 24px;
   font-weight: 700;
   margin: 16px auto 24px 0;
+}
+
+.contact-title {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 24px auto 24px 24px;
+}
+
+.contact-text {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 24px 32px 24px;
+}
+
+.contact-info-title {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 auto 26px 24px;
+}
+
+.contact-block {
+  margin: 0 auto 0 24px;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-icon-label {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.contact-content {
+  margin: 0 auto 26px 24px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 form {
