@@ -53,10 +53,10 @@
   <div class="content">
     <main>
       <div class="content-card">
-        <h1>
+        <h1 class="card-title">
           Lorem ipsum dolor sit amet
         </h1>
-        <p class="content-pubishing-data">
+        <p class="content-publishing-data">
           26/07/2020 às 00:04 - By: Fulano
         </p>
         <img src="assets/pessoa.png" alt="imagem pessoa ao computador" class="content-image" />
@@ -127,6 +127,22 @@
           </p>
 
         </div>
+      </div>
+      <div class="comments-card">
+        <h1 class="comments-title">
+          Comentários
+        </h1>
+        <form action="#" method="get">
+          <label for="txtName" id="lbName">Nome</label>
+          <label for="txtEmail" id="lbEmail">E-mail</label>
+          <input type="text" name="name" id="txtName">
+          <input type="email" name="email" id="txtEmail">
+          <label for="txtComments" id="lbComments">Comentários</label>
+          <textarea name="comments" id="txtComments" cols="30" rows="10"></textarea>
+          <button class="comment-button">
+            Comentar
+          </button>
+        </form>
       </div>
     </main>
     <aside>

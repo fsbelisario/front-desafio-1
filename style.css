@@ -73,7 +73,7 @@ main {
   border-radius: 4px;
 }
 
-h1 {
+.card-title {
   color: #000000;
   font-size: 24px;
   font-weight: 700;
@@ -81,9 +81,11 @@ h1 {
   margin: 24px auto 8px 24px;
 }
 
-.content-pubishing-data {
+.content-publishing-data {
   margin: 0 auto 14px 24px;
   font-size: 12px;
+  font-weight: 400;
+  color: #929292;
 }
 
 .content-card img {
@@ -117,8 +119,11 @@ h1 {
   margin-left: 56px;
 }
 
-.content-more {
+button {
   all:unset;
+}
+
+.content-more {
   width: 154px;
   height: 43px;
   align-self: flex-end;
@@ -151,8 +156,12 @@ aside {
   height: fit-content;
 }
 
-input {
+input, textarea {
   all:unset;
+  box-sizing: border-box;
+}
+
+#txtSearch {
   color: #545454;
   font-size: 14px;
   font-weight: 400;
@@ -164,7 +173,7 @@ input {
   padding-left: 20px;
 }
 
-input:hover, input:focus {
+#txtSearch:hover, #txtSearch:focus {
   border: 1px solid #FE0078;
   cursor: pointer;
 }
@@ -240,6 +249,94 @@ tr>td:last-child {
 
 .area-3 {
   margin: 0 20px 40px 20px;
+}
+
+.comments-card {
+  background-color: inherit;
+  color: #000000;
+  width: 100%;
+  text-align: left;
+}
+
+.comments-title {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 16px auto 24px 0;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 24px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 auto 8px 0;
+}
+
+#txtName, #txtEmail {
+  background-color: #FFFFFF;
+  color: #545454;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #EEEEEE;
+  border-radius: 2px;
+  height: 42px;
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+
+#lbComments {
+  grid-column: span 2;
+}
+
+#txtComments {
+  grid-column: span 2;
+  background-color: #FFFFFF;
+  color: #545454;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #EEEEEE;
+  border-radius: 2px;
+  height: 176px;
+  text-align: left;
+  padding: 14px 20px;
+  margin-bottom: 48px;
+}
+
+#txtName:hover, #txtEmail:hover, #txtComments:hover {
+  border: 1px solid #FE0078;
+  cursor: pointer;
+}
+
+.comment-button {
+  grid-column: span 2;
+  width: 118px;
+  height: 43px;
+  margin: 0 0 0 auto;
+  color: #929292;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #FE0078;
+  border: 1px solid #FE0078;
+  color: #FFFFFF;
+  border-radius: 20px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #545454;
+}
+
+.comment-button:hover, .comment-button:hover a{
+  background-color: #FFFFFF;
+  color: #929292;
+  cursor: pointer;
 }
 
 footer {
