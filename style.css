@@ -52,7 +52,7 @@ header {
 }
 
 .content {
-  margin: 56px 10% 64px 10%;
+  margin: 56px auto 64px auto;
   display: grid;
   grid-template-columns: 730px 380px;
   column-gap: 50px;
@@ -123,10 +123,9 @@ button {
   all:unset;
 }
 
-.content-more {
+.content-more-button {
   width: 154px;
   height: 43px;
-  align-self: flex-end;
   margin: 0 24px 24px auto;
   color: #929292;
   font-size: 14px;
@@ -141,7 +140,7 @@ a {
   color: #545454;
 }
 
-.content-more:hover, .content-more:hover a{
+.content-more-button:hover, .content-more-button:hover a, .send-button:hover{
   background-color: #FE0078;
   color: #FFFFFF;
   cursor: pointer;
@@ -173,7 +172,7 @@ input, textarea {
   padding-left: 20px;
 }
 
-#txtSearch:hover, #txtSearch:focus {
+#txtSearch:hover {
   border: 1px solid #FE0078;
   cursor: pointer;
 }
@@ -413,6 +412,11 @@ label {
   cursor: pointer;
 }
 
+#txtNameContact:hover, #txtEmailContact:hover, #txtSubjectContact:hover, #txtCommentsContact:hover {
+  border: 1px solid #FE0078;
+  cursor: pointer;
+}
+
 .comment-button {
   grid-column: span 2;
   width: 118px;
@@ -436,9 +440,8 @@ label {
   color: #929292;
   font-size: 14px;
   font-weight: 400;
-  background-color: #FE0078;
   border: 1px solid #FE0078;
-  color: #FFFFFF;
+  color: #FE0078;
   border-radius: 20px;
   text-align: center;
 }
