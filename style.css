@@ -312,16 +312,31 @@ tr>td:last-child {
   font-weight: 400;
 }
 
+.contact-form-title {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 40px auto 24px 24px;
+}
+
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 24px;
 }
 
+.form-contact {
+  margin: 0 24px 24px 24px;
+}
+
 label {
   font-size: 14px;
   font-weight: 400;
   margin: 0 auto 8px 0;
+}
+
+.form-contact label {
+  color: #000000;
 }
 
 #txtName, #txtEmail {
@@ -335,6 +350,44 @@ label {
   text-align: left;
   padding-left: 20px;
   margin-bottom: 24px;
+}
+
+#txtNameContact, #txtEmailContact {
+  color: #545454;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #EEEEEE;
+  border-radius: 2px;
+  height: 42px;
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+
+#txtSubjectContact {
+  grid-column: span 2;
+  color: #545454;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #EEEEEE;
+  border-radius: 2px;
+  height: 42px;
+  text-align: left;
+  padding: 14px 20px;
+  margin-bottom: 24px;
+}
+
+#txtCommentsContact {
+  grid-column: span 2;
+  color: #545454;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #EEEEEE;
+  border-radius: 2px;
+  height: 176px;
+  text-align: left;
+  padding: 14px 20px;
+  margin-bottom: 32px;
 }
 
 #lbComments {
@@ -363,6 +416,21 @@ label {
 .comment-button {
   grid-column: span 2;
   width: 118px;
+  height: 43px;
+  margin: 0 0 0 auto;
+  color: #929292;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #FE0078;
+  border: 1px solid #FE0078;
+  color: #FFFFFF;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.send-button {
+  grid-column: span 2;
+  width: 93px;
   height: 43px;
   margin: 0 0 0 auto;
   color: #929292;
